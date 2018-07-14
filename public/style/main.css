@@ -1,0 +1,84 @@
+.myNav{
+    background:rgba(0, 0, 0, 0.281);
+    max-width:100%;
+}
+
+.myNav li{
+    padding:20px;
+}
+
+.myNav a{
+    color:#fff!important;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.myNav li:hover {
+    background: rgba(245, 245, 245, 0.212);
+}
+
+.bg-1{
+
+    padding:80px;
+    background: rgba(3, 5, 4, 0.712);
+    color:#fff!important;
+}
+
+.bg-2{
+    
+
+    max-width: 1400px;
+}
+
+.bg-3{
+   background:rgba(3, 5, 4, 0.712);
+    
+}
+
+.plan h2{
+    font-size: 23px;
+    color:rgb(39, 39, 102);
+    text-align: center;
+}
+
+plan{
+    border-radius: 25px;
+}
+
+.plan p{
+    position: relative;
+}
+
+.plan img{
+    display: block;
+    margin: 0 auto;
+}
+
+.title h2{
+    margin:0 auto;
+    width:10%;
+    color:rgb(78, 76, 76);
+
+
+}
+
+.bg-4{
+    padding-top:40px;
+
+}
+
+.bg-4 h2{
+    margin-bottom:10px;
+}
+
+.card .card-body{
+    background: whitesmoke;
+}
+
+
+
+.footer{
+    padding:25px;
+    background: rgba(0, 0, 0, 0.900);
+    margin-top:20px;
+}

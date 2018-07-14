@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Satisfy" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+
+
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+
+</head>
+
+<body>
+
+
+
+    <div class="container-fluid text-center bg-1">
+        <div class="animated slideInLeft">
+            <h2>ABC</h2>
+            <p>the best university in the world</p>
+
+        </div>
+
+    </div>
+
+    <%if(role === "admin"){ %>
+
+    <% include inc/admin-nav %>
+
+    <%}else{ %>
+        <% include inc/nav %>
+
+        <%}%>
+
+
+
+
+
+    <div class="container-fluid bg-3 animated bounceInLeft bg-2">
+
+        <div class="title text-center">
+            <div class="underline">
+                <h2>services</h2>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 p-1 m-3 plan">
+
+                <div class="card">
+                    <img src="img/student.png" height="100px" />
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>plan</h2>
+                        </div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sequi. Tempore odio cumque quod exercitationem adipisci,
+                        esse magni corrupti recusandae ipsa, alias commodi dignissimos aliquid. Facere architecto quis blanditiis
+                        ipsam.
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-sm-3 p-1 m-3 plan">
+
+                <div class="card">
+                    <img src="img/staff.png" height="100px" />
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>plan</h2>
+                        </div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sequi. Tempore odio cumque quod exercitationem adipisci,
+                        esse magni corrupti recusandae ipsa, alias commodi dignissimos aliquid. Facere architecto quis blanditiis
+                        ipsam.
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-3 p-1 m-3 plan">
+
+                <div class="card">
+                    <img src="img/admin.png" height="100px" />
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>plan</h2>
+                        </div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sequi. Tempore odio cumque quod exercitationem adipisci,
+                        esse magni corrupti recusandae ipsa, alias commodi dignissimos aliquid. Facere architecto quis blanditiis
+                        ipsam.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container bg-4">
+
+        <h2 class="text-center">Events</h2>
+
+        <div class="row animated bounceInUp">
+            <div class="col-sm">
+                <div class="card">
+                    <img src="img/event.png" class="card-img-top" />
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>plan</h2>
+                        </div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sequi. Tempore odio cumque quod exercitationem adipisci,
+                        esse magni corrupti recusandae ipsa, alias commodi dignissimos aliquid. Facere architecto quis blanditiis
+                        ipsam.
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <img src="img/event.png" class="card-img-top"/>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>plan</h2>
+                        </div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sequi. Tempore odio cumque quod exercitationem adipisci,
+                        esse magni corrupti recusandae ipsa, alias commodi dignissimos aliquid. Facere architecto quis blanditiis
+                        ipsam.
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <img src="img/event.png" class="card-img-top"  />
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>plan</h2>
+                        </div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sequi. Tempore odio cumque quod exercitationem adipisci,
+                        esse magni corrupti recusandae ipsa, alias commodi dignissimos aliquid. Facere architecto quis blanditiis
+                        ipsam.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="countainer-fluid text-white text-center footer">
+        &copy;HackEmAll
+    </footer>
+</body>
+
+</html>

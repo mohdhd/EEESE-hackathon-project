@@ -1,0 +1,11 @@
+body{
+    background: #006699;
+
+}
+
+.main{
+    position: relative;
+    padding:70px;
+    top:60px;
+    background: whitesmoke;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Satisfy" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+
+
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/index-admin.css">
+    <title>Admin Page</title>
+</head>
+
+<body>
+
+
+    <% include ./../inc/admin-nav %>
+
+        <div class="container-fluid text-center bg-1">
+            <div class="animated slideInLeft">
+                <h2>ABC</h2>
+                <p>Welcome back,
+                    <%= name %>
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="container-fluid text-center dashboard">
+
+            <h2 class="text-center">dashboard</h2>
+
+
+
+
+            <% msgs.forEach((msg)=>{ %>
+                <div class="msg">
+
+                    <h5 class="msg-title">
+                        <%=msg.title %>
+                    </h5>
+
+                    <p>
+                        <%= msg.body %>
+                    </p>
+
+                    <p>From:<%=msg.author%> - Email:<%= msg.authorEmail%></p>
+
+                    <hr>
+
+                </div>
+                <% }) %>
+
+        </div>
+
+        <div class="dashboard events">
+            <h2 class="text-center">Events</h2>
+            <div class="msg text-center">
+                there's nothing to show
+            </div>
+        </div>
+
+
+        <div class="footer1 container-fluid">
+            &copy; HackEmAll
+        </div>
+
+
+
+</body>
+
+</html>

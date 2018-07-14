@@ -1,0 +1,19 @@
+body{
+    background: whitesmoke;
+}
+
+
+.main{
+    margin-top:30px!important;
+    width:100%;
+    color:#000;
+    margin-right:auto;
+    margin-left:auto;
+
+    border-radius: 25px;
+    padding:70px;
+    background: rgba(160, 160, 158, 0.247);
+
+}
+
+

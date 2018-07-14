@@ -1,0 +1,17 @@
+body{
+    background: whitesmoke;
+}
+
+
+.main{
+    margin-top:100px!important;
+    width:50%;
+    color:#000;
+
+    border-radius: 25px;
+    padding:70px;
+    background: rgba(160, 160, 158, 0.247);
+
+}
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>profile</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Satisfy" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+
+
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+
+    <link rel="stylesheet" type="text/css" href="style/profile.css">
+
+
+</head>
+
+<body>
+
+
+
+    
+
+    <%if(role === "admin"){ %>
+
+        <% include inc/admin-nav %>
+
+            <%}else{ %>
+                <% include inc/nav %>
+
+                    <%}%>
+
+<div class="container-fluid text-center bg-1">
+    <div class="animated slideInLeft">
+        <h2>ABC</h2>
+        <p>Welcome back,
+            <%= name %>
+        </p>
+
+    </div>
+
+
+    <div class="container info" >
+
+        <form action="/profile" method="POST">
+
+            <div class="form-group">
+                <label for="name"name:>name:</label>
+                <input class="form-control" type="text" name="name" value="<%=user.name%>" >
+            </div>
+
+            <div class="form-group">
+                <label for="password" name:>password:</label> 
+                <input class="form-control" type="password" name="password"value="<%=user.password%>">
+            </div>
+
+            <div class="form-group">
+                <label for="email" name:>email:</label>
+                <input class="form-control" type="email" name="email" value="<%=user.email%>">
+            </div>
+
+            <div class="form-group">
+                <label for="faculty" name:>faculty:</label>
+                <input class="form-control" type="text" name="faculty" value="<%=user.faculty%>">
+            </div>
+
+            <div class="form-group">
+                <label for="username" name:>username:</label>
+                <input class="form-control" type="text" name="username" value="<%=user.username%>">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">update</button>
+            </div>
+
+        </form>
+
+    </div>

@@ -1,0 +1,75 @@
++our app support Admins,staff and student accounts and it has a lot of feature as well as modern design 
+
++we support admin panels and specific user messaging plus chat
+
++we have post serivce for students as well as staff and also live chat
+
+===============================================
+
+
+to access your account you have to register and choose which plan to you belongs to for example a student a staff memeber or adminstartor? 
+
+================================================
+
+before you start using our apps you need some dependicies as listed below :
+
++ nodejs
++ mongodb database 
+
+so are the ones you have to download for yourself other dependicies you can install them automatically by using
+
+`npm install` command and let the magic happen then you can run the app by just typing `npm start`
+
+here is the list of dependicies required for the app to run :
+
++express
++express-session
++validator
++ejs
++passport
++passport-local
++lodash
++mongoose
++socket.io
++bycryptjs
++body-parser
+
+============================================
+
+routes in our app:
+
++first the admin route:
+
+it's absoulte path is `/admin`, it includes the following routes:
+
++/admin
++/admin/panel
++/admin/send
++/admin/profile
++/admin/dashboard
+
+then we have a Student route which is located at `/student` and it also includes :
+
++/student/
++/student/profile
++/student/dashboard
+
+then we have a staff route which is located at `/staff` and it also includes:
+
++/staff/
++/staff/profile
++/staff/dashboard
+
+and then we have the login and signup pages which are located at :
+
++/signup
++/login
+
+and then we have a sub app for a mini Q&A forum which is not fully completed but it works just fine.
+it supports users login comments and creating and deleting apps and it can be found on :
+
++/post/
++/post/create
+
+and then there's small app for chatting which is located on the users route such as /profile, and /dashboard
+
