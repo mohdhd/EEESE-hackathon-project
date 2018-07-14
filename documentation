@@ -1,26 +1,26 @@
-+our app support Admins,staff and student accounts and it has a lot of feature as well as modern design 
++our app support admins,staff and student accounts and it has a lot of features as well as modern design 
 
-+we support admin panels and specific user messaging plus chat
++we support admin panels and specific user messaging.
 
 +we have post serivce for students as well as staff and also live chat
 
 ===============================================
 
 
-to access your account you have to register and choose which plan to you belongs to for example a student a staff memeber or adminstartor? 
+to access your account you have to register and choose which plan to you belongs to for example a student a staff memeber or an adminstartor? 
 
 ================================================
 
-before you start using our apps you need some dependicies as listed below :
+before you start using our apps you need some dependencies as listed below :
 
 + nodejs
 + mongodb database 
 
-so are the ones you have to download for yourself other dependicies you can install them automatically by using
+so those are the ones you have to download by yourself other dependencies you can install them automatically by using
 
-`npm install` command and let the magic happen then you can run the app by just typing `npm start`
+`npm install` command and all the dependencies will be installed automatically then you can run the app by just typing `npm start`
 
-here is the list of dependicies required for the app to run :
+here is the list of dependencies required for the app to run :
 
 +express
 +express-session
