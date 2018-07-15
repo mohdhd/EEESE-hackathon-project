@@ -319,7 +319,7 @@ app.post('/admin/send', authAdmin, function (req, res) {
     msg = new adminMessage(req.body)
     msg.save((e)=>{
         if(!e){
-            res.send("saved")
+            res.redirect('/home')
         }else{
             res.send(e);
         }
