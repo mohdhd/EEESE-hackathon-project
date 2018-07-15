@@ -65,8 +65,11 @@ and then we have the login and signup pages which are located at :
 +/signup
 +/login
 
+*Note*: in the singup page there's admin option for singing up as an admin this option should be remove during
+development stage.
+
 and then we have a sub app for a mini Q&A forum which is not fully completed but it works just fine.
-it supports users login comments and creating and deleting apps and it can be found on :
+it supports users login, comments, creating and deleting apps and it can be found on :
 
 +/post/
 +/post/create

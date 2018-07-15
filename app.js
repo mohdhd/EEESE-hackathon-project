@@ -182,21 +182,60 @@ app.post('/profile',auth,(req,res)=>{
 
     body = req.body
 
-    User.update({email:req.body.email},{
-        $set:{
-         name:body.name,
-            username:body.username,
-            password:body.password,
-            faculty:body.faculty,
-            email:body.email}
+    if(req.user.password !== body.password){
+
+        bcrypt.hash(body.password, 10, function (err, hash) {
+
+            if (err) {
+
+                res.send("err happend " + err);
+            } else {
+
+                User.update({ email: req.body.email }, {
+                    $set: {
+                        name: body.name,
+                        username: body.username,
+                        password:hash ,
+                        faculty: body.faculty,
+                        email: body.email
+                    }
+
+                }, function (err, user) {
+                    if (err)
+                        res.send(err);
+                    else
+                        res.redirect('/profile');
+
+                });
+
+            }
+
+        });
         
-    },function(err,user){
-        if (err)
-        res.send(err);
-        else
-        res.send(user);
+    }else{
+
+        User.update({ email: req.body.email }, {
+            $set: {
+                name: body.name,
+                username: body.username,
+                password: body.password,
+                faculty: body.faculty,
+                email: body.email
+            }
+
+        }, function (err, user) {
+            if (err)
+                res.send(err);
+            else
+                res.redirect('/profile');
+
+        });
+
+    }
+
+   
+
     
-    });
 
 
 
