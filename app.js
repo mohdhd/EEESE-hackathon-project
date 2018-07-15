@@ -335,16 +335,34 @@ app.get('/admin/addadmin',authAdmin,function(req,res){
 
 
 app.post('/admin/addadmin',authAdmin,function(req,res){
-    let user = new User({
-        name:req.body.name,
-        password:req.body.password,
-        email:req.body.email,
-        username:req.body.username,
-        role:'admin'
-    }).save()
 
-    res.redirect('/');
-})
+    bcrypt.hash(req.body.password, 10, function (err, hash) {
+
+        if (err) {
+
+            res.send("err happend " + err);
+        } else {
+
+            let user = new User({
+                name: req.body.name,
+                password: hash,
+                email: req.body.email,
+                username: req.body.username,
+                role: 'admin'
+            }).save()
+
+            res.redirect('/');
+        }
+
+        });
+
+        
+
+    });
+
+
+
+   
 
 //staff handler
 
